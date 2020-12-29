@@ -1,5 +1,6 @@
 
 #!/bin/bash
-systemctl start mariadb.service
-systemctl start httpd.service
-systemctl start php-fpm.service
+systemctl start httpd
+systemctl enable httpd
+systemctl start mariadb
+systemctl enable mariadb
